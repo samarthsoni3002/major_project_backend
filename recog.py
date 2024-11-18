@@ -5,7 +5,7 @@ import os
 
 def face_recog():
 
-    known_faces_dir = "./face_recognition/known_faces"  
+    known_faces_dir = "major_project_backend/known_faces"  
     known_faces = {}
 
     for filename in os.listdir(known_faces_dir):

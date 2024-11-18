@@ -120,7 +120,7 @@ def fetch_attendance_data():
         print(f"Updated Excel file saved as: {output_excel_path}")
 
     # Usage
-    input_excel_path = "Backend_majorproject/HandHygieneData_with_Styled_Graphs.xlsx"  
-    output_excel_path = "Backend_majorproject/HandHygiene_Compliance_Report.xlsx" 
+    input_excel_path = "major_project_backend/HandHygieneData_with_Styled_Graphs.xlsx"  
+    output_excel_path = "major_project_backend/HandHygiene_Compliance_Report.xlsx" 
     process_and_write_to_excel(input_excel_path, output_excel_path)
     return output_excel_path

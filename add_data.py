@@ -6,7 +6,7 @@ def upload_data(category,name,icu):
     
  
     if not firebase_admin._apps:
-        cred = credentials.Certificate('Backend_majorproject/hand_wash_json_file.json')
+        cred = credentials.Certificate('major_project_backend/hand_wash_json_file.json')
         firebase_admin.initialize_app(cred, {
             'databaseURL': 'https://handhygiene-jaypeehealthcare-default-rtdb.firebaseio.com/'
         })

@@ -11,7 +11,7 @@ def fetch_icu_data():
    
  
     if not firebase_admin._apps:
-        cred = credentials.Certificate('Backend_majorproject/hand_wash_json_file.json')
+        cred = credentials.Certificate('major_project_backend/hand_wash_json_file.json')
         firebase_admin.initialize_app(cred, {
             'databaseURL': 'https://handhygiene-jaypeehealthcare-default-rtdb.firebaseio.com/'
         })
@@ -25,7 +25,7 @@ def fetch_icu_data():
     data = root_ref.child('Count').child('1').get()
 
     # Create Excel workbook
-    output_file = "Backend_majorproject/HandHygieneData_with_Styled_Graphs.xlsx"
+    output_file = "major_project_backend/HandHygieneData_with_Styled_Graphs.xlsx"
     workbook = Workbook()
 
     # Styling configurations
